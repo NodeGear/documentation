@@ -85,17 +85,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/nodegeardocumentation.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/nodegear.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/nodegeardocumentation.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/nodegear.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/nodegeardocumentation"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/nodegeardocumentation"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/nodegear"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/nodegear"
 	@echo "# devhelp"
 
 epub:
